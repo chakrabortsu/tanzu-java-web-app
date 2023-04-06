@@ -21,11 +21,11 @@ class HelloControllerTest {
 
     @Test
     void index() throws Exception {
-        assertEquals("Greetings from Spring Boot + Tanzu!", controller.index());
+        assertEquals("Welcome to VMware India Explore event !!", controller.index());
 
         mockMvc
             .perform(get("/"))
             .andExpect(status().isOk())
-            .andExpect(content().string("Greetings from Spring Boot + Tanzu!"));
+            .andExpect(content().string("Welcome to VMware India Explore event !!"));
     }
 }
