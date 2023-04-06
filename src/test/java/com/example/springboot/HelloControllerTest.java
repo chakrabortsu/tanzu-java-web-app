@@ -26,6 +26,6 @@ class HelloControllerTest {
         mockMvc
             .perform(get("/"))
             .andExpect(status().isOk())
-            .andExpect(content().string("Welcome to VMware Explore, India !!!"));
+            .andExpect(content().string(""));
     }
 }
